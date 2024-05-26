@@ -1,0 +1,74 @@
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    width: 100%;
+    z-index: 1;
+    position: relative;
+}
+
+.side-bar {
+    background-color: #374375;
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.side-bar.left {
+    left: 0;
+}
+
+.side-bar.right {
+    right: 0;
+}
+
+.profile-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 0 400px 0 400px;
+    width: calc(100% - 800px);
+    position: relative;
+    z-index: 1;
+}
+
+.profile-container::before {
+    content: "";
+    display: block;
+    height: 50px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-section {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.edit-button {
+    background-color: #f09898;
+    color: #f8f9fa;
+}
+
+.edit-button:hover {
+    background-color: #d68989;
+    color: #f8f9fa;
+}

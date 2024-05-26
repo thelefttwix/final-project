@@ -1,0 +1,114 @@
+html,
+body {
+  font-family: Nunito, sans-serif;
+  height: 100%;
+  margin: 0;
+}
+.container-fluid {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.mainPart {
+  background-color: #374375;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+.topElements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.title {
+  color: white;
+  margin-top: 20px;
+  font-size: 2rem;
+}
+.divider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px 0;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+.divider::before {
+  margin-right: 10px;
+}
+.divider::after {
+  margin-left: 10px;
+}
+.divider span {
+  white-space: nowrap;
+  color: white;
+  font-size: 16px;
+}
+.formText {
+  color: white;
+}
+.btnColor {
+  background-color: #f09898;
+  color: white;
+}
+.btnColor:hover {
+  background-color: #c07878;
+  color: white;
+}
+.button-container {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+.social-button {
+  width: 48%;
+}
+.form-container {
+  width: 100%;
+  max-width: 400px;
+}
+.agreeCheck {
+  color: #f09898;
+}
+.agreeCheck:hover {
+  color: #c07878;
+}
+.haveAccount {
+  color: white;
+  margin-top: 20px;
+}
+.logIn {
+  color: #f09898;
+}
+.logIn:hover {
+  color: #c07878;
+}
+.background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.background img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 767px) {
+  .background img {
+    display: none;
+  }
+}
+
+
